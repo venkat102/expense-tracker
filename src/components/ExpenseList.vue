@@ -12,16 +12,16 @@
 
 				>
 					<div
-						class="cursor-pointer hover:bg-[#1f253d] flex flex-1 justify-between items-center group border-4 border-[#394264]"
+						class="cursor-pointer hover:bg-[#1f253d] flex flex-1 justify-between w-full items-center group border-4 border-[#394264]"
 						:class="
 							expense.type === 'Expense'
 								? 'border-l-rose-500'
 								: 'border-l-green-500'
 						"
 					>
-						<div class="pl-1 mr-16 ml-5 w-3/4 overflow-hidden text-ellipsis">
+						<div class="pl-1 mr-16 ml-5 w-3/4 truncate">
 							<div class="font-medium text-white">{{ expense.title }}</div>
-							<div class="text-gray-200 text-sm ">
+							<div class="text-gray-200 text-sm">
 								{{ expense.description }}
 							</div>
 						</div>
